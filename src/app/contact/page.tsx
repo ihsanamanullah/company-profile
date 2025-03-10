@@ -7,15 +7,34 @@ const ContactUs: React.FC = () => {
   const [email, setEmail] = useState<string>("");
   const [message, setMessage] = useState<string>("");
   const [error, setError] = useState<string>("");
+  const [success, setSuccess] = useState<string>("");
 
   const handleSubmit = (e: React.FormEvent<HTMLFormElement>) => {
     e.preventDefault();
+
     if (!email.includes("@")) {
       setError("Invalid email address. Please include '@'.");
+      setSuccess("");
       return;
     }
+
+    if (!name.trim()) {
+      setError("Name cannot be empty.");
+      setSuccess("");
+      return;
+    }
+
+    if (!message.trim()) {
+      setError("Message cannot be empty.");
+      setSuccess("");
+      return;
+    }
+
     setError("");
-    alert(`Form submitted successfully!\nName: ${name}\nEmail: ${email}\nMessage: ${message}`);
+    setSuccess("Form submitted successfully! We'll get back to you soon.");
+    setName("");
+    setEmail("");
+    setMessage("");
   };
 
   return (
@@ -26,7 +45,7 @@ const ContactUs: React.FC = () => {
           Contact Us
         </h1>
         <p className="text-xl md:text-2xl text-gray-700 max-w-2xl mx-auto">
-          Have questions? We'd love to hear from you! Reach out to us for
+          Have questions? We&apos;d love to hear from you! Reach out to us for
           collaborations, inquiries, or feedback.
         </p>
       </section>
@@ -67,7 +86,6 @@ const ContactUs: React.FC = () => {
               }`}
               placeholder="Enter your email"
             />
-            {error && <p className="text-red-500 mt-2">{error}</p>}
           </div>
 
           {/* Message Input */}
@@ -84,6 +102,10 @@ const ContactUs: React.FC = () => {
               placeholder="Write your message here"
             ></textarea>
           </div>
+
+          {/* Display Errors or Success Message */}
+          {error && <p className="text-red-500 mb-4">{error}</p>}
+          {success && <p className="text-green-500 mb-4">{success}</p>}
 
           {/* Submit Button */}
           <button

@@ -1,6 +1,5 @@
 import Link from "next/link";
 import Image from "next/image";
-import { TbSearch } from "react-icons/tb";
 import { SiNike, SiAdidas, SiNewbalance } from "react-icons/si";
 
 const products = [

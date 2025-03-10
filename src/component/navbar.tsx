@@ -1,6 +1,6 @@
 import Link from "next/link";
 import { TbSearch } from "react-icons/tb";
-import { SiNike } from "react-icons/si";
+
 
 const Navbar = () => {
   return (
