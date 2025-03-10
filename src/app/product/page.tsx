@@ -13,7 +13,7 @@ const products = [
     id: 2,
     name: "Nike SB Dunk Low x Born X Raised 'One Block At A Time'",
     price: "Rp.4.500.000",
-    image: "/Image.jpeg",
+    image: "/sbh.jpeg",
   },
   {
     id: 3,
