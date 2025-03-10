@@ -4,7 +4,7 @@ import Image from "next/image";
 const brands = [
   { name: "Nike", image: "/nike-logo.png" },
   { name: "Adidas", image: "/adidas-logo.png" },
-  { name: "New Balance", image: "/new-balance.png" },
+  { name: "New Balance", image: "/nb.png" },
   { name: "Vans", image: "/vans-logo.png" },
   { name: "Puma", image: "/puma.png" },
   { name: "Reebok", image: "/rbk.png" },
