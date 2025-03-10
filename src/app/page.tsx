@@ -25,7 +25,7 @@ export default function Home() {
             },
             {
               name: "Nike SB Dunk Low x Born X Raised 'One Block At A Time'",
-              image: "/image.jpeg",
+              image: "/Image.jpeg",
               description:
                 "Introducing the Nike SB Dunk Low x Born x Raised—crafted with meticulous detail for a luxurious sneaker.",
               price: "Rp.4.545.000",
