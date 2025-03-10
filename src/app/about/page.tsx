@@ -57,7 +57,7 @@ const AboutUs = () => {
           }, {
             name: "Michael Lee",
             role: "Product Manager",
-            image: "/btk.webp",
+            image: "/btk.jpg",
             description: "Michael oversees our product development, ensuring we maintain top-tier quality and design."
           }, {
             name: "Ronald Davis",
